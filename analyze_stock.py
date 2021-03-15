@@ -5,12 +5,15 @@ from analyze_metrics import metrics
 
 
 # pick the stock that you want to analyze
-ticker = "MLI"
+ticker = "CRSP"
 
 # if you want to save the file locally, change this to True
 save = False
 
 figure_1(stock = ticker, save = save)
+
 figure_2(stock = ticker, save = save)
+
 figure_3(stock = ticker, save = save)
-metrics_df = metrics(stock = ticker, save = True)
+
+metrics_df = metrics(stock = ticker, save = save)

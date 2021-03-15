@@ -59,7 +59,9 @@ def figure_3(stock, save):
                 color = np.where(df['Cash Flow From Operating Activities']>0,
                                  "green", "red"),
                 width = bar_w)
-    ax[0,0].set(title="Cash Flow From Operating Activities")
+    ax[0,0].set(title="Cash Flow From Operating Activities",
+                xlabel = "Year",
+                ylabel = "Millions of USD")
     
     
     # plot cash from investing activities 
@@ -68,7 +70,9 @@ def figure_3(stock, save):
                 color = np.where(df['Cash Flow From Investing Activities']>0,
                                  "red", "green"),
                 width = bar_w)
-    ax[0,1].set(title="Cash Flow From Investing Activities")
+    ax[0,1].set(title="Cash Flow From Investing Activities",
+                xlabel = "Year",
+                ylabel = "Millions of USD")
     
     # plot cash from financing activites
     ax[1,0].bar(x=df.index,
@@ -76,14 +80,18 @@ def figure_3(stock, save):
                 color = np.where(df['Cash Flow From Financial Activities']>0,
                                  "red", "green"),
                 width = bar_w)
-    ax[1,0].set(title="Cash Flow From Financial Activities")
+    ax[1,0].set(title="Cash Flow From Financial Activities",
+                xlabel = "Year",
+                ylabel = "Millions of USD")
     
     # Pretax Income
     ax[1,1].bar(x=df.index,
                 height=df['Net Cash Flow'],
                 color = "black",
                 width = bar_w)
-    ax[1,1].set(title="Net Cash Flow")
+    ax[1,1].set(title="Net Cash Flow",
+                xlabel = "Year",
+                ylabel = "Millions of USD")
     
     if save == True:    
         fig.savefig("./portfolio/"+stock+"/figure_3.pdf")

@@ -58,14 +58,18 @@ def figure_2(stock, save):
                 height=df['Revenue'],
                 color = "black",
                 width = bar_width)
-    ax[0,0].set(title="Revenue")
+    ax[0,0].set(title="Revenue",
+                xlabel = "Year",
+                ylabel = "Millions of USD")
     
     # plot net income
     ax[0,1].bar(x=df.index,
                 height=df['Net Income'],
                 color = np.where(df['Net Income']>0, "green", "red"),
                 width = bar_width)
-    ax[0,1].set(title="Net Income")
+    ax[0,1].set(title="Net Income",
+                xlabel = "Year",
+                ylabel = "Millions of USD")
     
     # plot operating income
     # does not include interest expense, taxes, and special items (some analysts prefer)
@@ -73,7 +77,9 @@ def figure_2(stock, save):
                 height=df['Operating Income'],
                 color = np.where(df['Operating Income']>0, "green", "red"),
                 width = bar_width)
-    ax[1,1].set(title="Operating Income")
+    ax[1,1].set(title="Operating Income",
+                xlabel = "Year",
+                ylabel = "Millions of USD")
     
     # Pretax Income
     # Allows us to know income before any tax manipulation
@@ -81,7 +87,9 @@ def figure_2(stock, save):
                 height=df['Pre-Tax Income'],
                 color = np.where(df['Pre-Tax Income']>0, "green", "red"),
                 width = bar_width)
-    ax[1,0].set(title="Pre-Tax Income")
+    ax[1,0].set(title="Pre-Tax Income",
+                xlabel = "Year",
+                ylabel = "Millions of USD")
     
     # save figure if true
     if save == True:
