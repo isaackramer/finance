@@ -15,7 +15,7 @@ def figure_3(stock, save):
     headers.remove('popup_icon')
     result = []
     for row in data:
-        soup = bs(row['field_name'])
+        soup = bs(row['field_name'], features="lxml")
         field_name = soup.select_one('a, span').text
         fields = list(row.values())[2:]
         fields.insert(0, field_name)
@@ -94,6 +94,4 @@ def figure_3(stock, save):
                 ylabel = "Millions of USD")
     
     if save == True:    
-        fig.savefig("./portfolio/"+stock+"/figure_3.pdf")
-    
-figure_3('MLI', True)
+        fig.savefig("./portfolio/analyze_output/figure_3.pdf")

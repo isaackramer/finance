@@ -171,5 +171,5 @@ def figure_1(stock, save):
     plt.setp(ax[2,1].get_xticklabels(), rotation=45, ha='right')
     
     if save == True:
-      fig.savefig("./portfolio/"+stock+"/figure_1.pdf")
+      fig.savefig("./portfolio/analyze_output/figure_1.pdf")
 

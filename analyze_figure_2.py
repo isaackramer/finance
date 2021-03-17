@@ -15,7 +15,7 @@ def figure_2(stock, save):
     headers.remove('popup_icon')
     result = []
     for row in data:
-        soup = bs(row['field_name'])
+        soup = bs(row['field_name'], features="lxml")
         field_name = soup.select_one('a, span').text
         fields = list(row.values())[2:]
         fields.insert(0, field_name)
@@ -93,5 +93,5 @@ def figure_2(stock, save):
     
     # save figure if true
     if save == True:
-        fig.savefig("./portfolio/"+stock+"/figure_2.pdf")
+        fig.savefig("./portfolio/analyze_output/figure_2.pdf")
     

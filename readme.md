@@ -1,6 +1,10 @@
-# Stock analyzer
+# Finance with Python
 
-This repository is designed to analyze stocks. The collected data can be used to help evaluate whether to purchase a company's stock. Main functions are in `analyze_stock.py`
+This repository is designed to analyze stocks. The functions can be used to help evaluate stocks before purchase. Functions to evaluate portfolio performance are also included.
+
+## Evaluating a stock before purchase 
+
+These functions be used to help evaluate whether to purchase a company's stock. Main functions are in `analyze_stock.py`
 
 `analyze_figure_1.py` This function provides basic information about a company's historical performance, recent price trends, recent earnings and revenue history, volatility, and dividends.
 
@@ -13,7 +17,16 @@ This repository is designed to analyze stocks. The collected data can be used to
 * Cash from financing activities: This primarily refers to cash associated with new debts and dividends payments. It can also refer to common stock repurchasing – buying back its own shares. Whether this is a good thing depends on stock price and company’s position. 
 * Net cash flow: Want to see growing positive numbers
 
-`analyze_metrics` This function relies on the finvizfinance package to gather important metrics such as the price-earnings ratio, price-sales ratio, debt-equity ratio, and price-book ratio. These ratios can be used to evaluate whether a paticular company's stock is overvalued or fairly priced.
+`analyze_metrics.py` This function relies on the finvizfinance package to gather important metrics such as the price-earnings ratio, price-sales ratio, debt-equity ratio, and price-book ratio. These ratios can be used to evaluate whether a paticular company's stock is overvalued or fairly priced.
 
-`earnings_calendar.py` This function checks when the next earning announcment is scheduled for stocks in `stock_portfolio.csv`.
+## Earnings Calendar
 
+`earnings_calendar.py` This function checks when the next earning announcment is scheduled for stocks in `my_portfolio_public.csv`.
+
+## Portfolio Performance 
+
+`analyze_portfolio.py` This function can be used to analyze the performance of your portfolio. To use, update the `my_portfolio_public.csv` file in the `portfolio` directory. Output includes three PDFs. (1) the cummulative returns of each stock in your portfolio from 2015 -- Present, as compared to the S&P 500, (2) (1) the cummulative returns of each stock in your portfolio from your intital date of purchase -- Present, as compared to the S&P 500, (3) total returns for each stock in your portfolio, returns per share, and returns per dollar invested
+
+## ETF Filter -- Find Value Stocks
+
+`ETF_filter.py` This function can be used to filter a given ETF to find value stocks. This function relies on the finvizfinance package to gather important metrics such as the price-earnings ratio, price-sales ratio, debt-equity ratio, and price-book ratio. 

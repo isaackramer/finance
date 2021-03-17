@@ -36,6 +36,6 @@ def metrics(stock, save):
     df['Market Cap'] = df['Market Cap'].str.replace('B', '')
     
     if save == True:
-     df.to_csv("./portfolio/"+stock+"/metrics.csv")
+     df.to_csv("./portfolio/analyze_output/metrics.csv")
     
     return df

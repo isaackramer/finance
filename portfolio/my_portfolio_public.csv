@@ -1,0 +1,24 @@
+Symbol,Company,Trade_Date,Purchase_Price,Shares
+TD,The Toronto-Dominion Bank,20210312,65.18,1
+BYND,"Beyond Meat, Inc. (BYND)",20210311,139.79,1
+BRK-B,Berkshire Hathaway Inc.,20210311,261.39,1
+WIX,Wix.com Ltd.,20210225,329.715,1
+WIX,Wix.com Ltd.,20210312,292.41,1
+MELI,"MercadoLibre, Inc.",20210310,1507.35,1
+SHOP,Shopify Inc.,20210310,1131.28,1
+TGT,Target Corporation,20210310,180.17,1
+MSFT,Microsoft Corporation,20210225,230.395,1
+MSFT,Microsoft Corporation,20210312,234.09,1
+NFLX,"Netflix, Inc.",20210225,534.285,1
+NFLX,"Netflix, Inc.",20210312,508.53,1
+TSM,Taiwan Semiconductor Manufacturing Company Limited,20210225,130.3,1
+TSM,Taiwan Semiconductor Manufacturing Company Limited,20210310,116.42,1
+SEDG,"SolarEdge Technologies, Inc.",20210301,298.61,1
+MLI,"Mueller Industries, Inc.",20210111,38.16,1
+PWR,"Quanta Services, Inc.",20210111,75.488,1
+CSIQ,Canadian Solar Inc.,20210111,54.82,1
+ASAN,"Asana, Inc.",20210122,39.76,1
+AZEK,The AZEK Company Inc.,20201224,38.86,1
+Z,"Zillow Group, Inc.",20210223,180.29,1
+Z,"Zillow Group, Inc.",20210224,174.09,1
+Z,"Zillow Group, Inc.",20210310,145.5,1
